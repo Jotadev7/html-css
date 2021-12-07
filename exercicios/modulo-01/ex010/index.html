@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1> <!-- Para envelopar é Ctrl + Shift + P -->
+    <p>Você pode acessar <a href="http://gustavoguanabara.github.io/" target="_blank" rel="external">meu repositório no GitHub</a></p> <!--Para abrir em uma nova página usar target e rel-->
+    <p>Você também pode acessar o <a href="http://youtube.com">meu canal gratuito no YouTube</a></p> <!--Vai abrir o link em cima da página atual-->
+
+    <h1>Usando links internos</h1>
+    <p>Esta é a primeira página do meu site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next">segunda página</a> </p> <!--Se estiver na mesma pasta, o rel next diz que é a próxima página (sistema de navegação, semântica)-->
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self" rel="next">página de notícias</a></p> <!--Target seft é para a mesma página-->
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/Curriculum.pdf" download="Curriculum.pdf" type="application/pdf">Baixar o livro em PDF</a></li> <!--# no href significa link vazio-->
+        <li><a href="livro/Curriculum.rar" download="Curriculum.rar" type="application/rar">Baixar livro compactado</a></li>
+    </ul>
+</body>
+</html>
