@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML</title><!--MP4, WEBN e OGV-->
+</head>
+<body>
+    <h1>Vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video src="midia/meu-video.mp4" width="560" controls autoplay loop></video><!--Inserindo de forma comum-->
+
+    <p>Vídeo inserindo conforme compatibilidade</p>
+    <video width="560" poster="imagens/limoes-capa.png" controls ><!--Dessa forma para verificar a compatibilidade-->
+        <source src="midia/meu-video.m4v" type="video/mp4">
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos. <a href="midia/meu-video.mp4" download="meu-video">Clique aqui para baixar o arquivo</a></p>
+    </video>
+
+    <h1>Incorporando vídeos externos</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
