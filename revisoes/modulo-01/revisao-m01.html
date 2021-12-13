@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="html.ico" type="image/x-icon"><!--Inserindo ícone em HTML-->
 </head>
 <body>
-    <h1>Primeiros passos HTML+CSS</h1>
+    <h1>Primeiros passos HTML</h1>
 
     <h3><abbr title="Utilizamos as tags <h1~5> para inserirmos títulos em HTML">Títulos</abbr></h3>
         <h4>Exemplo de título em HTML</h4>
@@ -68,10 +68,55 @@
             <li>Fogo</li>
         </ol>
 
-    <h3><abbr title=""></abbr></h3>
+    <h3><abbr title="Para inserirmos listas não ordenadas utilizamos a tag <ul> (podemos escolher o type), e os itens são inseridos com a tag <li>.">Listas não ordenadas</abbr></h3>
+        <ul type="square"><!--TYPES: circle, disc, square-->
+            <li>Ovos</li>
+            <li>Farinha de trigo</li>
+            <li>Leite</li>
+        </ul>
+
+    <h3><abbr title="Para inserirmos listas de definições utilizamos a tag <dl>, e para os itens utilizamos as tags <dt> (utilizada para o termo) e <dd> (utilizada para a descrição).">Listas de definições</abbr></h3>
+        <dl>
+            <dt>HTML</dt> <!--TERMO-->
+            <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd> <!--DESCRIÇÃO-->
+            <dt>CSS</dt>
+            <dd>Linguagem de marcação para a criação do design de um site.</dd>
+            <dt>JavaScript</dt>
+            <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+        </dl>
+
+    <h3><abbr title=" Lembrando que ao tratar de listas podemos também inserir uma lista dentro da outra.">Curiosidade sobre listas!</abbr></h3><hr>
+
+    <h3><abbr title="Para utilizar links e ancoras utilizamos a tag <a>, onde o href será igual ao nosso diretório, o target (_self ou _blank) para informar se é para abrir em uma nova página ou na mesma página, e o rel (next ou prev, external) será a semântica.">Links internos</abbr></h3>
+        <a href="pagina1.html" target="_self" rel="next">Exemplo de link interno.</a> <!--Não levará a lugar algum pois a página1 não existe.-->
+
+    <h3><abbr title="Como no exemplo anterior, utilizando a tag <a>. A diferença é que o href nos levará a um endereço externo.">Links externos</abbr></h3>
+        <a href="https://youtube.com" target="_blank" rel="external">Exemplo de link externo.</a>
+
+    <h3><abbr title="Também utilizando a tag <a>, no href teremos o endereço do objeto a ser baixado, no download teremos o nome do arquivo, e no type o tipo de arquivo (exemplo: application/pdf).">Link para download</abbr></h3>
+        <a href="foto-p.png" download="foto-p.png" type="image/png">Exemplo de link para download.</a><hr>
 
     <h3><abbr title="Para usar símbolos utilizamos a prefixo &(código); e para usar emojis utilizamos o prefixo &#x(código);">Símbolos e emojis</abbr></h3>
         <p>Exemplos de símbolo: &UpArrow; &Delta; - Códigos UpArrow e Delta<br>Exemplos de emojis: &#x1F596; &#x1F913; - Códigos U+1F596 e U+1F913</p>
+
+    <h3><abbr title="Para reproduzir áudios utilizamos a tag <audio>, temos o src para definir qual áudio a ser reproduzido, e podemos escolher também o type (mp3, ogg e wav). ">Reproduzindo áudio</abbr></h3>
+        <audio preload="metadata" autoplay controls><!--Usado dessa forma para verificar a compatibilidade com o navegador-->
+            <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+            <source src="midia/guanacast-33.ogg" type="audio/ogg">
+            <source src="midia/guanacast-33.wav" type="audio/wav">
+            <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/happy-mistake.mp3" download="">Clique aqui para baixar o arquivo</a></p>
+        </audio>
+
+    <h3><abbr title="Utilizando a tag <video>, não muito diferente da tag apresentada anteriormente para inserir áudios.">Reproduzindo vídeos</abbr></h3>
+        <video width="560" poster="imagens/limoes-capa.png" controls ><!--Dessa forma para verificar a compatibilidade-->
+            <source src="midia/meu-video.m4v" type="video/mp4">
+            <source src="midia/meu-video.mp4" type="video/mp4">
+            <source src="midia/meu-video.ogv" type="video/ogg">
+            <p>Seu navegador não tem compatibilidade com reprodução de vídeos. <a href="midia/meu-video.mp4" download="meu-video">Clique aqui para baixar o arquivo</a></p>
+        </video>
+
+    <h3><abbr title="Utilizamos a tag <iframe>, porém essa tag completa pode ser obtida nos sites de serviço de vídeo, como o YouTube.">Incorporando vídeos externos</abbr></h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <h3><abbr title="Utilizamos a tag <img> para inserir imagem em HTML">Imagens</abbr></h3>
         <img src="html.ico" alt="Imagem tamanho fixo" width="80">
@@ -82,6 +127,6 @@
         <img src="foto-g.png" alt="Imagem flexível">
     </picture>
 
-    
+    <p>Revisão de todo conteúdo HTML (Apenas HTML, até o ex012) visto no módulo 1 do curso de HTML e CSS do Curso em vídeo.</p>
 </body>
 </html>
