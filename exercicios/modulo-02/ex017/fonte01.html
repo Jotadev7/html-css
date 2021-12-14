@@ -6,20 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fontes em CSS</title>
     <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@800&display=swap');
+    /* Importando fonte para trabalhar com pesos */
+
         body {
-            font-family: Arial, Helvetica, sans-serif; /* Safe combination */
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif; /* Safe combination */
             /* Medidas absolutas: cm, mm, in, px, pt, pc (pt e pc não recomendado).
             Medidas relativas: em, ex, rem, vw, vh e %. 
             (Mais recomendados são px e em. Normalmente 16px = 1 em.) */
             font-size: 18px; /* Normalmente 16px padrão */
         }
         h1, h2 {
+            /*Shorthand font - Simplificando
+            - font-style -> font weight -> font-size -> font family
+
             font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 2em;
+            font-style: italic;
+
+            */
+            font: italic bolder 2em 'Work Sans', sans-serif;
         }
 
         p {
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-size: 14px;
+            font: bold 1em 'Work Sans', sans-serif;
         }
     </style>
 </head>
