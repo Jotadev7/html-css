@@ -8,3 +8,20 @@
 h4 {
     color: blueviolet;
 }
+
+p#teste { /*Estilizando id*/
+    color: brown;
+}
+
+p.teste { /*Estilizando classe*/
+    color: cadetblue;
+}
+
+a#testehover {
+    text-decoration: none;
+}
+
+a#testehover:hover {
+    text-decoration: underline;
+    color: red;
+}
