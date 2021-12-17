@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@font-face { /*Fazendo importação da fonte baixada.*/
+    font-family: 'Love';
+    src: url(love\ larry\ ttf.ttf) format('truetype');
+}
+
 h4 {
     color: blueviolet;
 }

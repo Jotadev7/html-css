@@ -26,6 +26,50 @@
 
     <h3><abbr title="Na hierarquia dos estilos, o estilo inline é atribuído primeiro, depois o local, e por último o externo. ">Observação!</abbr></h3><hr>
     
-    <h3><abbr title="Para utilizarmos cores em CSS">Cores em CSS</abbr></h3>
+    <h3><abbr title="Para utilizarmos cores em CSS podemos representar por nome, por hexadecimal, por RGB ou por HSL.">Cores em CSS</abbr></h3>
+        <ul>
+            <li><abbr title="Para utilizar a representação por nome utilizamos color:white; por exemplo.">Representação por nome.</abbr></li>
+            <p style="color: red;">Exemplo de cor representada por nome.</p>
+            <li><abbr title="Para utilizar a representação por hexadecimal utilizamos color:#0000ff; por exemplo.">Representação por hexadecimal</abbr></li>
+            <p style="color: #ff0000;">Exemplo de cor representada por hexadecimal.</p>
+            <li><abbr title="Para utilizar a representação por RGB utilizamos color:(255, 0, 0); por exemplo. Onde o R é o valor de Red, o G de Green e o B de Blue.">Representação por RGB.</abbr></li>
+            <p style="color: rgb(255, 0, 0);">Exemplo de cor representada por RGB.</p>
+            <li><abbr title="Para utilizar a representação por HSL utilizamos color:(0%, 100%, 50%); por exemplo. Onde o H é de matiz, o S de saturação e L de luminosidade (Hue, Saturation e Luminosity).">Representação por HSL.</abbr></li>
+            <p style="color: hsl(0, 100%, 50%);">Exemplo de cor representada por HSL.</p>
+            <li><abbr title="Podemos utilizar transparência com as respresentações RGBA ou HSLA. Basta acrescentarmos o 4° valor, da transparência.">Transparência</abbr></li>
+            <p style="color: rgba(255, 0, 0, 0.527);">Exemplo de transparência.</p>
+        </ul>
+
+    <h3><abbr title="Ainda tratando de cores em CSS, podemos utilizar o gradiente. Para criarmos esse efeito utilizamos o background-image e precisamos informar três parâmetros: o primeiro é a direção (to top ou 45deg), o segundo é a primeira cor e o terceiro é a segunda cor (pode ter mais de duas cores). Podemos utilizar o linear-gradient(to up ou 90deg), ou radial-gradient(circle).">Gradiente em CSS</abbr></h3>
+        <p style="background-image: linear-gradient(to left, darkred, red);">Exemplo de gradiente da esquerda para direita.</p>
+        <p style="background-image: linear-gradient(to right, darkred, red);">Exemplo de gradiente da direita para esquerda.</p>
+        <p style="background-image: radial-gradient(circle, darkred 70%, red); background-attachment: fixed;">Exemplo de gradiente radial, em forma de círculo.</p><hr>
+
+    <h3><abbr title="Ao trabalhar com fontes em CSS devemos conhecer um pouco da topografia das fontes.">Fontes em CSS</abbr></h3>
+        <ul>
+            <li><abbr title="Para atribuirmos o tamanho da fonte em CSS utilizamos o font-size. E as medidas utilizadas são:  Medidas absolutas: cm, mm, in, px, pt, pc (pt e pc não recomendado). Medidas relativas: em, ex, rem, vw, vh e %. (Mais recomendados são px e em. Normalmente 16px = 1 em.).">Tamanho da fonte</abbr></li>
+            <li><abbr title="Para atribuirmos a família da fonte utilizamos o font-family. Algumas famílias são fontes serifadas e não serifadas, e algumas não são aceitas por todos os navegadores, por isso é recomendado atribuir mais de uma família (Safe combination).">Família da fonte</abbr></li>
+            <li><abbr title="Para atribuirmos o peso da fonte utilizamos o font-weight. Alguns exemplos de peso são: numeral (100 a 900), ou nas palavras normal > bolder.">Peso da fonte</abbr></li>
+            <li><abbr title="Para atribuirmos o estilo da fonte utilizamos o font-style. Alguns exemplos são o italic, bold, underline">Estilo da fonte</abbr></li>
+            <li><abbr title="Podemos utilizar o shorthand para abreviar/simplificar as definições da fonte por exemplo. E na implementação seguiremos essa mesma ordem: font-style, font-weight, font-size e por último font-family.">Shorthand = "font: italic bolder 2em 'Work Sans', sans-serif;"</abbr></li>
+        </ul>
+
+        <h3><abbr title="Podemos também inserir fontes que não existem por padrão em nossos projetos. Para isso podemos utilizar a importação direta do Google Fonts por exemplo, ou até mesmo fazer o donwload da fonte desejada e importar posteriormente.">Utilizando fontes externas</abbr></h3>
+            <ul>
+                <li><abbr title="Precisamos primeiro fazer a importação da fonte desejada: @import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap');">Fonte com Google Fonts</abbr></li>
+                <p style="font-family: 'Crafty Girls', cursive;">Exemplo de texto com fonte externa.</p>
+                <li><abbr title="Precisamos primeiros fazer o donwload da fonte desejada, e logo após declaramos a nova fonte no @font-face. font-family: 'Love'; src: url('fonts/love larry ttf.ttf') format('truetype');. Devemos atentar também para os tipos de fontes aceitos: Opentype (otf), Truetype (ttf), Embedded-opentype, Truetype-aat (Apple Advanced Typography) e SVG.">Fonte externa</abbr></li>
+                <p style="font-family: 'Love';">Exemplo de texto utilizando fonte baixada.</p>
+            </ul><hr>
+
+        <h3><abbr title="Podemos alinhar o texto de quatro maneiras: left, center, right e justify. Para isso utilizamos o text-align. Temos também o text-indent, que faz a indentação no início do parágrafo conforme o tamanho inserido.">Alinhamento de texto com CSS</abbr></h3>
+            <ul>
+                <li style="text-align: left;"><strong>Exemplo de alinhamento a esquerda.</strong></li>
+                <li style="text-align: center;"><strong>Exemplo de alinhamento ao centro.</strong></li>
+                <li style="text-align: right;"><strong>Exemplo de alinhamento a direita.</strong></li>
+                <li style="text-align: justify; text-indent: 40px;"><strong>Exemplo de texto justificado e indentado.</strong> (Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloribus iste ipsum nihil dignissimos totam laborum enim id. Qui officia natus fuga? Nihil laborum ex explicabo error iure odio ratione.)</li>
+            </ul><hr>
+
+        <h3><abbr title="Continuar do ex19">Seletores</abbr></h3>
 </body>
 </html>
