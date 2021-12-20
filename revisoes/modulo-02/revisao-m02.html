@@ -78,5 +78,33 @@
 
         <h3><abbr title="Para entender o hover primeiro devemos entender os seletores em CSS. (# = ID, . = CLASS, : = PSEUDO-CLASS, :: = PSEUDO-ELEMENT, > = CHILDREN). O Hover é uma pseudo-class, que realiza uma ação ao passar o mouse por cima do elemento.">Hover</abbr></h3>
             <p>Passe o mouse para ver o <a href="#" id="testehover">hover</a> funcionando.</p>
+
+        <h3><abbr title="Neste módulo utilizamos dois modelos, o BOX-LEVEL (div, p, h1) e INLINE-LEVEL (span, a). O box-level ocupa toda a extensão da tela e é criado sempre uma nova linha para a caixa, já a inline-level ocupa apenas um espaço pequeno e não há quebra de linha.">Modelo de caixas</abbr></h3>
+            <p style="background-color: chocolate;">Exemplo de caixa box-level.</p>
+            <p>Exemplo de caixa <a href="#" style="background-color: chartreuse;">inline-level</a>.</p>
+
+        <h3><abbr title="Para a personalização de caixas vimos as principais características: Padding, margin, box-shadow, border-radius... ">Personalização de caixas</abbr></h3>
+            <ul>
+                <li><abbr title="A propriedade padding define uma distância entre o conteúdo de um elemento e suas bordas (Interno). Pode ser definido separadamente, ou de forma abreviada.">Padding</abbr></li>
+                <p style="background-color: chocolate; padding: 10px; width: 200px;">Exemplo de padding.</p>
+                <li><abbr title="A propriedade margin simplesmente adiciona uma margem ao seu elemento. Ao contrário do padding, essa margem é externa.">Margin</abbr></li>
+                <p style="background-color: chocolate; width: 200px; margin: 10px;">Exemplo de margin.</p>
+                <li><abbr title="A propriedade box-shadow permite que você adicione uma sombra em quase qualquer elemento. Sua estrutura se dá em: Alinhamento horizontal, alinhamento vertical, embaçamento e espalhamento. Podemos inserir o inset antes para uma sombra interna.">Box-shadow</abbr></li>
+                <p style="background-color: chocolate; width: 200px; box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.541);">Exemplo de box-shadow.</p>
+                <li><abbr title="A propriedade border-radius destina-se a definir bordas arredondadas.">Border-radius</abbr></li>
+                <p style="background-color: chocolate; width: 200px; border-radius: 5px;">Exemplo de border-radius.</p>
+            </ul>
+
+        <h3><abbr title="Atualmente o papel da HTML não é apenas estruturar documentos para a web, mas também descrever o significado do conteúdo presente nesses documentos por meio de tags semânticas. O HTML semântico tem como objetivo descrever o significado do conteúdo presente em documentos HTML, tornando-o mais claro tanto para programadores quanto para browsers e outras engines que processam essa informação.">Grouping tags</abbr></h3>
+            <ul>
+                <li><abbr title="O <header> é utilizado para representar o cabeçalho de um documento ou seção declarado no HTML. Nele podemos inserir elementos de <h1> a <h6>, até elementos para representar imagens, parágrafos ou mesmo listas de navegação. Diferentemente da tag <head>, é possível declarar mais de um <header> por página.">Header</abbr></li>
+                <li><abbr title="O elemento <section> representa uma seção dentro de um documento e geralmente contém um título, o qual é definido por meio de um dos elementos entre <h1> e <h6>. Podemos utilizar o <section>, por exemplo, para descrever as seções/tópicos de um documento.">Section</abbr></li>
+                <li><abbr title="Utilizamos o elemento <article> quando precisamos declarar um conteúdo que não precisa de outro para fazer sentido em um documento HTML, por exemplo, um artigo em um blog. É recomendado identificar cada <article> com um título.">Article</abbr></li>
+                <li><abbr title="O elemento <nav> é utilizado quando precisamos representar um agrupamento de links de navegação, que, por sua vez, são criados com os elementos <ul>, <li> e <a>. Podemos declarar o <nav> em qualquer lugar do documento que contenha uma lista de links, inclusive no <header>.">Nav</abbr></li>
+                <li><abbr title="O elemento <aside> é utilizado quando precisamos criar um conteúdo de apoio/adicional ao conteúdo principal. Por exemplo, ao falar de HTML semântico, podemos indicar ao leitor outros conteúdos sobre a linguagem HTML como sugestão de leitura complementar.">Aside</abbr></li>
+                <li><abbr title="O elemento <main> especifica o conteúdo principal e, consequentemente, de maior relevância dentro da página. Para ser considerada bem construída, uma página deve apresentar apenas um conteúdo principal. O conteúdo declarado dentro da tag <main> deve ser único no documento, incluindo links e imagens.">Main</abbr></li>
+                <li><abbr title="O elemento <figure> é uma marcação de uso específico para a inserção de uma figura. Para incluir a descrição dessa figura, podemos utilizar o elemento <figcaption>.">Figure</abbr></li>
+                <li><abbr title="O elemento <footer> representa um rodapé de um documento, como a área presente no final de uma página web. Normalmente é utilizado para descrever informações de autoria, como nome e contato do autor, e data de criação do conteúdo.">Footer</abbr></li>
+            </ul>
 </body>
 </html>
