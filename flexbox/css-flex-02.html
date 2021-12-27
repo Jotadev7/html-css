@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .item {
+            margin: 5px;
+            padding: 5px;
+            background-color: #447;
+            text-align: center;
+            font-size: 1em;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            border: 1px solid #000;
+        }
+
+        .flexivel { /*Padrão utilizado com bootstrap para acostumar, criar a classe para coisas flexiveis.*/
+            display: flex; /*Display por padrão block, ocupa toda a linha. Display flex torna os itens flexiveis, todos se adaptam a mesma linha.*/
+            flex-direction: column-reverse; /*Padrão é row: row (esquerda pra direita) / row-reverse (direita pra esquerda) / column (de cima pra baixo) / column-reverse (de baixo pra cima)*/
+        }
+
+        p {
+            text-align: center;
+            margin: 25px 0 0 0;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS FlexBox, propriedade display:flex.</h1>
+    <div class="container flexivel"> <!--Por padrão, display block. Ou seja, somente ele ocupa a linha. -->
+        <div class="item">CFB Cursos 1</div>
+        <div class="item">CFB Cursos 2</div>
+        <div class="item">CFB Cursos 3</div>
+        <div class="item">CFB Cursos 4</div>
+        <div class="item">CFB Cursos 5</div>
+        <div class="item">CFB Cursos 6</div>
+        <div class="item">CFB Cursos 7</div>
+        <div class="item">CFB Cursos 8</div>
+        <div class="item">CFB Cursos 9</div>
+        <div class="item">CFB Cursos 10</div>
+    </div>
+</body>
+</html>
