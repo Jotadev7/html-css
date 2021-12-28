@@ -6,7 +6,7 @@
     padding: 0;
     font-size: 100%;
     box-sizing: border-box; /*Para não ter problemas com os paddings*/
-    font-family: 'Opens Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 nav, ul {
@@ -25,6 +25,7 @@ a:hover {
 /* Fim dos resets */
 
 /* HEADER */
+
 header {
     width: 100%;
     position: absolute;
@@ -124,6 +125,7 @@ header li:last-child { /*Usando a pseudo-class first-child para pegar o primeiro
     font-size: 2rem;
     margin-bottom: 35px;
     color: #191c03;
+    text-align: center;
 }
 
 .conheca-o-hotel p {
@@ -167,5 +169,69 @@ header li:last-child { /*Usando a pseudo-class first-child para pegar o primeiro
 @media (max-width: 700px) { /*Inserindo um breakpoint, quando atingir 700px irá realizar a mudança nas imagens*/
     .conheca-o-hotel .grid li.small, .conheca-o-hotel .grid li.large {
         flex-basis: 100%;
+    }
+}
+
+/* CARACTERÍSTICAS */
+
+.caracteristicas {
+    background-color: #191c03;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.caracteristicas h3 {
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: #fff;
+    text-align: center;
+}
+
+.caracteristicas p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: #fff;
+    text-align: center;
+}
+
+.caracteristicas hr {
+    width: 200px;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 70px;
+    border: none;
+}
+
+.caracteristicas .grid {
+    width: 100%;
+    display: flex;
+}
+
+.caracteristicas .grid li {
+    padding: 0 30px;
+    text-align: center;
+}
+
+.caracteristicas .grid li i {
+    color: #c3c63b;
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+}
+
+.caracteristicas .grid li h4 {
+    font-size: 1.5rem;
+    color: #c3c63b;
+    margin-bottom: 30px;
+}
+
+.caracteristicas .grid li p {
+    color: #fff;
+}
+
+@media (max-width: 850px) { /*Inserindo um breakpoint, quando atingir 700px irá realizar a mudança nas imagens*/
+    .caracteristicas .grid {
+        flex-direction: column;
     }
 }
