@@ -1,51 +1,70 @@
 @charset "UTF-8";
 
-.container {
-    background-color: #ccc;
-    height: 500px;
+/* Fazendo os resets nas configurações padrões */
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box; /*Para não ter problemas com os paddings*/
+    font-family: 'Opens Sans', sans-serif;
+}
+
+nav, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+a:hover {
+    opacity: 1;
+}
+/* Fim dos resets */
+
+/* HEADER */
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
-    flex-direction: row; /*column | column-reverse | row | row-reverse.*/
-    flex-wrap: wrap; /*nowrap | wrap | wrap-reverse.*/
-    flex-flow: row nowrap; /*Usado para abreviar o direction e o wrap, nessa ordem.*/
-    justify-content: flex-start; /*Usado para fazer alinhamento horizontal. Por padrão é o flex-start (alinha da esquerda para direita), temos o flex-end (alinha da direita para esquerda) e temos o center (alinha no centro). Outros dois alinhamentos são space-between (cria um espaçamento entre os itens) e o space-around (cria um espaçamento entre os itens e a borda externa).*/
-    align-items: stretch; /*Usado para fazer alinhamento vertical. Por padrão é o stretch (faz com que todos os itens cresçam por igual), temos o flex-start (alinhados no topo), temos o flex-end (alinhados na base), temos o center (alinhados no centro) e temos o baseline (alinhamento baseado no conteúdo de cada item).*/
-    align-content: flex-start; /*Usado para fazer alinhamento vertical quando os itens estiverem em mult-line (com wrap ativo). Recebe os mesmos valores do justify-content.*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
 }
 
-.item {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    margin: 5px;
-    width: 30px;
-    height: 30px;
-
-    flex-grow: 1; /*Valor padrão 0. Define a largura ocupada pelo item.*/
-    flex-shrink: 1; /*Define a capacidade de redução do item.*/
-    flex-basis: 20px; /*Define a largura inicial de cada item.*/
-
-    flex: 1 1 300px; /*SHORTHAND, primeiro grow depois shrink e depois basis.*/
+header img {
+    width: 200px;
 }
 
-.article-01 {
-    background-color: red;
-    order: 3; /*Define a ordem do item.*/
-    align-self: center; /*Valor padrão auto. Realiza alinhamento individual do item. Recebe os mesmos valores do align-items.*/
-    flex-grow: 1;
-    flex-shrink: 3;
+header nav {
+    display: flex;
 }
 
-.article-02 {
-    background-color: green;
-    order: 2;
+header li a {
+    color: #191c03;
 }
 
-.article-03 {
-    background-color: blue;
-    order: 4;
+header li {
+    margin: 0 15px;
 }
 
-.article-04 {
-    background-color: yellow;
-    order: 1;
+header li:first-child { /*Usando a pseudo-class first-child para pegar o primeiro filho dessa lista*/
+    margin-left: 0;
+}
+
+header li:last-child { /*Usando a pseudo-class first-child para pegar o primeiro filho dessa lista*/
+    margin-right: 0;
+}
+
+@media (max-width: 700px) { /*Inserindo um breakpoint, quando atingir 700px irá realizar a mudança no header*/
+    header {
+        flex-direction: column;
+    }
+    header img {
+        margin-bottom: 15px;
+    }
 }
