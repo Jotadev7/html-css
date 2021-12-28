@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.container {
+    background-color: #ccc;
+    height: 500px;
+    display: flex;
+    flex-direction: row; /*column | column-reverse | row | row-reverse.*/
+    flex-wrap: wrap; /*nowrap | wrap | wrap-reverse.*/
+    flex-flow: row wrap; /*Usado para abreviar o direction e o wrap, nessa ordem.*/
+    justify-content: flex-start; /*Usado para fazer alinhamento horizontal. Por padrão é o flex-start (alinha da esquerda para direita), temos o flex-end (alinha da direita para esquerda) e temos o center (alinha no centro). Outros dois alinhamentos são space-between (cria um espaçamento entre os itens) e o space-around (cria um espaçamento entre os itens e a borda externa).*/
+    align-items: stretch; /*Usado para fazer alinhamento vertical. Por padrão é o stretch (faz com que todos os itens cresçam por igual), temos o flex-start (alinhados no topo), temos o flex-end (alinhados na base), temos o center (alinhados no centro) e temos o baseline (alinhamento baseado no conteúdo de cada item).*/
+    align-content: flex-start; /*Usado para fazer alinhamento vertical quando os itens estiverem em mult-line (com wrap ativo). Recebe os mesmos valores do justify-content.*/
+}
+
+.item {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 5px;
+    width: 200px;
+    height: 50px;
+}
+
+.article-01 {
+    background-color: red;
+}
