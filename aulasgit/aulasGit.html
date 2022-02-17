@@ -8,9 +8,11 @@
 </head>
 <body>
     <h1>Comandos GIT</h1>
-    <abbr title="Adiciona os arquivos na caixa">Git add .</abbr>
+    <abbr title="Puxa uma cópia do projeto do repositório online para o respositório local">Git clone</abbr>
+    <abbr title="Adiciona os arquivos na caixa">Git add (. adiciona tudo, git reset -- NOMEARQUIVO para tirar o que não deseja adicionar, git add -i forma de adicionar interativa.)</abbr>
     <abbr title="Fecha o pacote a ser armazenado">Git commit -m</abbr>
     <p>Quando é feito um novo commit é criado uma nova árvore, um novo blob. Podemos usar o git log para ver o histórico (melhor de visualizar no GitHub).</p>
+    <abbr title="Hard: apaga tudo que fez e volta, Soft: remove o commit mas não joga fora as modificações">Git reset (--hard e --soft)</abbr>
     <abbr title="Cria uma ramificação/branch nova">Git checkout -b feature, equivalente a gib branch feature</abbr>
     <p>Para verificarmos as branchs existentes podemos usar um tree .git/refs. As branchs são etiquetas que apontam para um commit.</p>
     <abbr title="Muda a branch atual">Git switch feature</abbr>
@@ -34,5 +36,6 @@
     <p>Bitkeeper - Um dos primeiros versionadores de códigos.</p>
     <p>Git foi desenvolvido por volta de 2015.</p>
     <p>Diff e Patch do Linux - diff para identificar a diferença, patch que é o "remendo", que une as diferenças.</p>
+    <p>Branch - galho: duplica o diretório, e gera os patches. PullRequest é basicamente uma branch do projeto.</p>
 </body>
 </html>
